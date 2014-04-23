@@ -1,6 +1,6 @@
 # is-7zip [![Build Status](https://travis-ci.org/kevva/is-7zip.svg?branch=master)](https://travis-ci.org/kevva/is-7zip)
 
-> Check if a Buffer/Uint8Array is a BZIP2 file
+> Check if a Buffer/Uint8Array is a 7ZIP file
 
 ## Install
 
