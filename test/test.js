@@ -1,18 +1,15 @@
-/*global describe, it */
 'use strict';
 
-var assert = require('assert');
-var fs = require('fs');
 var is7zip = require('../');
 var path = require('path');
+var readChunk = require('read-chunk');
+var test = require('ava');
 
-describe('is7zip()', function () {
-    function check(file) {
-        return is7zip(fs.readFileSync(file));
-    }
+test('should detect 7ZIP from buffer', function (t) {
+    t.plan(2);
 
-    it('should detect 7ZIP from buffer', function (cb) {
-        assert(check(path.join(__dirname, 'fixtures/test.7z')));
-        cb();
+    readChunk(path.join(__dirname, 'fixtures/test.7z'), 0, 6, function (err, buf) {
+        t.assert(!err);
+        t.assert(is7zip(buf));
     });
 });
