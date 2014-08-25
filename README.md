@@ -4,29 +4,20 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save is-7zip
-```
-
-```bash
-$ component install kevva/is-7zip
-```
-
-```bash
-$ bower install --save is-7zip
 ```
 
 ## Usage
 
 ```js
-var fs = require('fs');
 var is7zip = require('is-7zip');
-var buf = fs.readFileSync('foo.7z');
+var read = require('fs').readFileSync;
 
-is7zip(buf);
+is7zip(read('foo.7z'));
 // => true
 ```
 
 ## License
 
-MIT © [Kevin Mårtensson](https://github.com/kevva)
+[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
