@@ -2,11 +2,13 @@
 
 > Check if a Buffer/Uint8Array is a 7ZIP file
 
+
 ## Install
 
-```sh
+```
 $ npm install --save is-7zip
 ```
+
 
 ## Usage
 
@@ -17,6 +19,7 @@ var read = require('fs').readFileSync;
 is7zip(read('foo.7z'));
 //=> true
 ```
+
 
 ## License
 
