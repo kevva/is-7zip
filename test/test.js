@@ -1,9 +1,9 @@
 'use strict';
 
-var is7zip = require('../');
 var path = require('path');
 var readChunk = require('read-chunk');
 var test = require('ava');
+var is7zip = require('../');
 
 test('should detect 7ZIP from buffer', function (t) {
 	t.plan(2);

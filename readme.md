@@ -13,8 +13,8 @@ $ npm install --save is-7zip
 ## Usage
 
 ```js
-var is7zip = require('is-7zip');
 var read = require('fs').readFileSync;
+var is7zip = require('is-7zip');
 
 is7zip(read('foo.7z'));
 //=> true
