@@ -1,6 +1,6 @@
 {
 	"name": "is-7zip",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Check if a Buffer/Uint8Array is a 7ZIP file",
 	"license": "MIT",
 	"repository": "kevva/is-7zip",
